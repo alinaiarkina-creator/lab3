@@ -1,0 +1,105 @@
+/* Базове оформлення сторінки */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f5f5f5;
+    color: #222;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 5px;
+    color: #555;
+}
+
+/* Блок керування */
+.controls {
+    margin: 20px 0;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.controls label {
+    font-weight: bold;
+}
+
+.controls input[type="number"] {
+    width: 120px;
+    padding: 5px;
+}
+
+.controls button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#startBtn {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+#stopBtn {
+    background-color: #f44336;
+    color: #fff;
+}
+
+#stopBtn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Таблиця */
+.table-section {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Перший рядок таблиці (заголовок) – особливе оформлення */
+.header-row {
+    background-color: #1976d2;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Оформлення парних та непарних рядків */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;       /* непарні рядки */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e3f2fd;       /* парні рядки */
+}
+
+/* При наведенні */
+tbody tr:hover {
+    background-color: #ffe082;
+}
